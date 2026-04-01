@@ -1,0 +1,10 @@
+(env (_ (coq (flags (:standard 
+ -w -convert_concl_no_check
+ -w -several-object-files
+ -w -ssr-search-moved
+ -w -deprecated-instance-without-locality
+ -w -notation-overridden 
+ -w -redundant-canonical-projection
+ ; TODO remove by fixing the context joining notation in types.v
+ -w -notation-incompatible-prefix
+ )))))
